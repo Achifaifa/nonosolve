@@ -48,7 +48,8 @@ function draw_line(x1,y1,x2,y2)
 function draw_ui()
 {
   ctx.textAlign="center"
-  ctx.fillText("[space] STEP",400,550)
+  ctx.fillText("[space] STEP",400,530)
+  ctx.fillText("[z] Change puzzle", 400,545)
 }
 
 function draw_grid(id)
@@ -320,6 +321,13 @@ document.addEventListener('keydown', function(e) {
     solvestep()
     loop()
   }
+  // z (90)
+  if (e.keyCode==90) {
+    reset_grid()
+    current_level=Math.floor(Math.random()*puzzles.length)
+    loop()
+  }
+
 });
 
 reset_grid()
