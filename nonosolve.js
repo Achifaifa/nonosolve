@@ -20,7 +20,7 @@ puzzles=[
   [[2,5,1],[10],[3,2,1],[1,6],[5,2],[2,1,2,1],[2,1,1,1,1],[1,6,1],[3,5],[1,2,2,1]]
   ],
 ]
-current_level=2
+current_level=0
 
 //0 -> empty place
 //1 -> filled place
